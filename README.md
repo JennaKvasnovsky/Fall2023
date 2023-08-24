@@ -1,4 +1,4 @@
 # Fall2023
 Math for Data Science
 notes
-<img src="https://images.app.goo.gl/x4ro6h5v4A8f6LTq9">
+<img src="https://images.app.goo.gl/2ZqVjf5yhmhUPwqt6">
