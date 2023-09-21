@@ -25,51 +25,59 @@
   23. Identity matrix: a specific type of square matrix where all the elements along its main diagonal (from the top-left to the bottom-right) are equal to 1, and all other elements are equal to 0. 
 
 # installation
-pip install numpy
+    pip install numpy
 
 # import numpy
-import numpy as np 
+    import numpy as np 
 
-# to create an array
-a = np.array([1, 2, 3, 4, 5])
+# Create an array from list
+    my_list = [1, 2, 3, 4, 5]
+    my_array = np.array(my_list)
+    
+# Create an array from Built_In Functions
+    zeros_array = np.zeros((3, 4))      # Creates a 3x4 array filled with zeros
+    ones_array = np.ones((2, 2))        # Creates a 2x2 array filled with ones
+    random_array = np.random.rand(3, 3)  # Creates a 3x3 array with random values between 0 and 1
 
-# Creates a 3x4 array filled with zeros
-zeros_array = np.zeros((3, 4))
+# 
 
-# Creates a 2x3 array filled with ones
-ones_array = np.ones((2, 3))       
+# 3x4 array filled with zeros
+    zeros_array = np.zeros((3, 4))
 
- # Creates a 3x3 array with random values
+# 2x3 array filled with ones
+    ones_array = np.ones((2, 3))       
+
+ # 3x3 array with random values
 random_array = np.random.rand(3, 3) 
 
 # Creates a range of values: [0,2,4,6,8] 
-range_array = np.arange(0, 10, 2)
+    range_array = np.arange(0, 10, 2)
 
 # Creates an array with 5 evenly spaced values between 0 and 1
-linspace_array = np.linspace(0, 1, 5)
+    linspace_array = np.linspace(0, 1, 5)
 
 # Array operations
-a = np.array([1, 2, 3])
-b = np.array([4, 5, 6])
+    a = np.array([1, 2, 3])
+    b = np.array([4, 5, 6])
 
-c = a + b
-d = a * b
+    c = a + b
+    d = a * b
 
 # Indexing and Slicing
-arr = np.array([0, 1, 2, 3, 4, 5])
-print(arr[2])       # Access element at index 2
-print(arr[2:5])     # Get a slice from index 2 to 4
+    arr = np.array([0, 1, 2, 3, 4, 5])
+    print(arr[2])       # Access element at index 2
+    print(arr[2:5])     # Get a slice from index 2 to 4
 
 # Reshaping Arrays: you can reshape it using the shape  and the reshape() attribute.
-arr = np.array([[1, 2, 3], [4, 5, 6]])
-print(arr.shape)           # Prints the shape (2, 3)
-reshaped_arr = arr.reshape(3, 2)  # Reshape to (3, 2)
+    arr = np.array([[1, 2, 3], [4, 5, 6]])
+    print(arr.shape)           # Prints the shape (2, 3)
+    reshaped_arr = arr.reshape(3, 2)  # Reshape to (3, 2)
 
 # Array Functions 
-arr = np.array([1, 2, 3, 4, 5])
-print(np.sum(arr))        # Sum of array elements
-print(np.mean(arr))       # Mean of array elements
-print(np.max(arr))        # Maximum value in the array
+    arr = np.array([1, 2, 3, 4, 5])
+    print(np.sum(arr))        # Sum of array elements
+    print(np.mean(arr))       # Mean of array elements
+    print(np.max(arr))        # Maximum value in the array
 
 # Array Broadcasting
 
@@ -78,11 +86,30 @@ print(np.max(arr))        # Maximum value in the array
 # Documentation and Resources
 
 # Create a 2x3 array filled with zeros
-zeros_array = np.zeros((2, 3))
-print(zeros_array)
+    zeros_array = np.zeros((2, 3))
+    print(zeros_array)
 
 # Create a 4x4 identity matrix
-identity_matrix = np.eye(4)
-print(identity_matrix)
+    identity_matrix = np.eye(4)
+    print(identity_matrix)
 
+# Basic Indexing
+    arr = np.array([1, 2, 3, 4, 5])
+    element = arr[2]  # Access the third element (index 2)
 
+    matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    value = matrix[1, 2]  # Access element in row 1, column 2
+
+# Slicing
+    arr = np.array([0, 1, 2, 3, 4, 5])
+    slice = arr[2:5]  # Extract elements from index 2 to 4
+
+# Advanced Indexing
+    arr = np.array([10, 20, 30, 40, 50])
+    indices = np.array([1, 3])
+    selection = arr[indices]  # Extract elements at indices 1 and 3
+
+    matrix = np.array([[1, 2], [3, 4], [5, 6]])
+    row_indices = np.array([0, 2])
+    col_indices = np.array([1, 0])
+    selection = matrix[row_indices, col_indices]  # Select elements at (0, 1) and (2, 0)
