@@ -123,6 +123,18 @@ plt.show()
 
     plt.tight_layout()  # Adjust subplot spacing
     plt.show()
+    
+# Random GrayScale Image
+    # Define the dimensions of the image
+    width, height = 256, 256
+
+    # Generate a random grayscale image
+    random_image = np.random.randint(0, 256, (height, width), dtype=np.uint8)
+
+    # Display the random grayscale image
+    plt.imshow(random_image, cmap='gray')
+    plt.axis('off')  # Turn off axis labels
+    plt.show()
 
   # MatPlotLib Documentation
   https://matplotlib.org/stable/users/index.html
